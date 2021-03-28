@@ -9,6 +9,20 @@
 
     <style>
         body {background-color: powderblue;}
+        .buttonBorder {
+            border: 1px solid black;
+            width: 40vw;
+            margin: 5vw;
+        }
+        .buttonBorder:hover {
+            background-color: #ade6e6;
+        }
+        img {
+            height: 30vh;   
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
     </style>
 </head>
 <body>
@@ -27,13 +41,21 @@
     </nav>
     <h1 class="text-center">Welcome to Gif Your Day</h1>
     <p class="text-center">Create GIFs of your day and share it with the community!</p>
-    <div>
-        <div>
-            
-        </div>
-        <div>
-            
-        </div>
+    <div style="display: inline-flex;">
+        <a href="/view" class="buttonBorder">
+            <div >
+                <h3 class="text-center">View</h3>
+                <p class="text-center">View the days of other people through GIFs</p>
+                <img src="https://img.icons8.com/cotton/2x/view-file.png">
+            </div>
+        </a>
+        <a href="/create"  class="buttonBorder">
+            <div>
+                <h3 class="text-center">Create</h3>
+                <p class="text-center">Create a GIF of your day and share it with the community</p>
+                <img src="https://freepikpsd.com/wp-content/uploads/2019/10/create-clipart-1-Png-Transparent-Images.png">
+            </div>
+        </a>
     </div>
 </body>
 </html>
