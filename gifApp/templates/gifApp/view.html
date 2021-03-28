@@ -27,7 +27,9 @@
     </nav>
     <h1 class="text-center">Gallery</h1>
     <p class="text-center">Explore how people around the world spent their day</p>
-    <img src= {{ gif }}>
+    {% for gif in gifs %}
+        <img src= {{ gif }}>
+    {% endfor %}
     
 </body>
 </html>
