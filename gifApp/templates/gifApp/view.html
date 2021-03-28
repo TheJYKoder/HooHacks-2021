@@ -6,6 +6,10 @@
 
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <style>
+        body {background-color: powderblue;}
+        img {height: 20vh;}
+    </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-sm bg-light navbar-light">
@@ -21,6 +25,8 @@
         </li>
       </ul>
     </nav>
+    <h1 class="text-center">Gallery</h1>
+    <p class="text-center">Explore how people around the world spent their day</p>
     <img src= {{ gif }}>
     
 </body>
