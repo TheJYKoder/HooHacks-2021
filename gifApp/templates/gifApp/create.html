@@ -6,6 +6,15 @@
 
     <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
     <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <style type="text/css">
+        body {background-color: powderblue;}
+    </style>
+    <script type="text/javascript">
+        function disappear() {
+            console.log("D");
+            document.getElementById("formID").style.display = "none";
+        }
+    </script>
 </head>
 <body>
     <nav class="navbar navbar-expand-sm bg-light navbar-light">
@@ -23,15 +32,15 @@
     </nav>
     <h1 class="text-center">Create Gif</h1>
     <p class="text-center">Make a Gif to describe your day!</p>
-    <form style="margin-left:100px;" action="">
+    <form style="margin-left:100px;" id="formID">
 	  <label for="fword">First word:</label><br>
 	  <input type="text" id="fword" name="fword"> <br>
 	  <label for="sword">Second word:</label> <br>
 	  <input type="text" id="sword" name="sword"><br>
 	  <label for="tword">Third word:</label> <br>
 	  <input type="text" id="tword" name="tword"><br>
-	  <input type="submit" value = "Generate Gif!">
+	  <input type="submit" value = "Generate Gif!" onclick="disappear()">
 	</form>
-    <img src= "out.gif">
+    <img src= "{% static 'out.gif' %}">
 </body>
 </html>
